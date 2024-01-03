@@ -683,11 +683,11 @@ PUT /g-positions/leverage?leverageRr=<leverage>&longLeverageRr=<longLeverageRr>&
 
 #### Set RiskLimit
 Risk Limit Modification Notice:
-For Hedged contracts, the Set Position Risk Limit API has been deprecated. It is no longer possible to manually set the Risk Limit. Instead, simply adjust the leverage multiplier as required, and the Risk Limit will be 
+For hedged contracts, the 'Set Position Risk Limit API' has been deprecated. It is no longer possible to manually set the 'Risk Limit'. Instead, simply adjust the leverage multiplier as required, and the 'Risk Limit' will be 
 automatically adjusted.
 
 New Risk Limit Configuration Explanation:
-A new attribute called leverageMargin has been added to the properties of symbol pairs. By locating the corresponding index_id within the leverageMargins node, one can find the associated Risk Limit information. The 
+A new attribute called leverageMargin has been added to the properties of symbol pairs. By locating the corresponding index_id within the leverageMargins node, one can find the associated 'Risk Limit' information. The 
 configuration is as follows:
 ```json
 {
@@ -726,6 +726,7 @@ configuration is as follows:
   ]
 }
 ```
+For more information, please refer to the link: https://phemex.com/contract/leverage-margin
 
 
 <a name="assignpositionbalance"/>
